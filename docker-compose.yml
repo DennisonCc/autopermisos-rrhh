@@ -1,0 +1,32 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: autopermisos
+      POSTGRES_USER: autopermisos
+      POSTGRES_PASSWORD: autopermisos
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U autopermisos -d autopermisos"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    environment:
+      DB_URL: jdbc:postgresql://db:5432/autopermisos
+      DB_USERNAME: autopermisos
+      DB_PASSWORD: autopermisos
+      DDL_AUTO: update
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres_data:

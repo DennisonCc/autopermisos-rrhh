@@ -1,0 +1,40 @@
+name: Reporte de error
+description: Reporta un comportamiento inesperado
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar un error. Completa la información para facilitar el diagnóstico.
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción del error
+      description: ¿Qué ocurrió y qué esperabas que ocurriera?
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducir
+      placeholder: |
+        1. Ir a ...
+        2. Hacer clic en ...
+        3. Observar el error
+    validations:
+      required: true
+  - type: textarea
+    id: entorno
+    attributes:
+      label: Entorno
+      description: Versión del sistema, navegador, JDK, etc.
+    validations:
+      required: false
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia adicional
+      description: Logs, capturas de pantalla o trazas de error.
+    validations:
+      required: false
