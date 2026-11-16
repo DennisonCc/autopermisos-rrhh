@@ -140,3 +140,5 @@ a main utilizando Squash and merge.
 7. Se integra mediante Squash and merge.
 8. Se elimina la rama utilizada.
 9. Se actualiza el tablero.
+
+![GitHub Flow](diagramas/FlujoRamas.png)
