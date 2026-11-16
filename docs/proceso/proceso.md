@@ -93,3 +93,50 @@ Todos los integrantes participan como desarrolladores.
 ### Control de documentos
 Los documentos se actualizan mediante Pull Requests
 revisados y aprobados por otro integrante.
+
+
+## Parte E. Flujo de ramas y convenciones
+
+### Estrategia seleccionada
+
+Se utiliza GitHub Flow porque el equipo tiene
+tres integrantes y realiza entregas incrementales
+cada dos semanas.
+
+Cada actividad se registra como Issue.
+Los cambios se realizan en ramas independientes,
+se revisan mediante Pull Requests y se integran
+a main utilizando Squash and merge.
+
+### Comparación
+
+| Criterio | Git Flow | GitHub Flow | Trunk Based |
+|---|---|---|---|
+| Complejidad | Alta | Baja | Media |
+| Equipo pequeño | Regular | Excelente | Buena |
+| Entrega frecuente | Media | Alta | Muy alta |
+| Ramas de larga duración | Varias | No necesarias | No necesarias |
+| Estrategia elegida | No | Sí | No |
+
+### Convenciones
+
+| Elemento | Convención | Ejemplo |
+|---|---|---|
+| Rama | tipo/numero-descripcion | docs/12-proceso-equipo |
+| Commit | tipo: descripcion (#issue) | docs: agrega RACI (#12) |
+| PR | Título descriptivo | docs: completa proceso |
+| Issue | Vincular con Closes #N | Closes #12 |
+| Fusión | Squash and merge | PR aprobado |
+| Versión | SemVer | v0.1.0 |
+
+### Reglas
+
+1. Toda actividad comienza con un Issue.
+2. Se crea una rama desde main.
+3. Se registran los cambios mediante commits.
+4. Se abre un Pull Request.
+5. Otro integrante revisa y aprueba.
+6. Se resuelven las observaciones.
+7. Se integra mediante Squash and merge.
+8. Se elimina la rama utilizada.
+9. Se actualiza el tablero.
