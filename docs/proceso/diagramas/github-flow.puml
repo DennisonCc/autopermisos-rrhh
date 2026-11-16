@@ -1,0 +1,35 @@
+
+@startuml
+title Flujo de ramas - GitHub Flow
+
+start
+:Seleccionar Issue de GitHub;
+:Actualizar rama main;
+:Crear rama tipo/numero-descripcion;
+:Realizar cambios;
+:Crear commits;
+:Subir rama a GitHub;
+:Abrir Pull Request;
+:Vincular Issue con Closes #N;
+
+repeat
+  :Revisión del Pull Request;
+  if (¿Cambios solicitados?) then (Sí)
+    :Corregir observaciones;
+    :Realizar nuevo commit;
+  else (No)
+    :Aprobar Pull Request;
+  endif
+repeat while (¿Cambios solicitados?) is (Sí) not (No)
+
+if (¿Existe conflicto?) then (Sí)
+  :Resolver conflicto de integración;
+  :Registrar solución en el PR;
+else (No)
+endif
+
+:Squash and merge en main;
+:Eliminar rama utilizada;
+:Cerrar Issue y actualizar tablero;
+stop
+@enduml
