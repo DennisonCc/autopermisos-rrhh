@@ -25,3 +25,5 @@ El equipo utilizará Scrum con iteraciones de dos semanas debido a que el proyec
 | Seguimiento | Semanal | 15 min | Equipo | Issues |
 | Sprint Review | Fin Sprint | 20 min | Equipo | Pull Requests |
 | Retrospectiva | Fin Sprint | 20 min | Equipo | Acta |
+
+![Flujo del sprint](diagramas/Flujo Sprint.png)
