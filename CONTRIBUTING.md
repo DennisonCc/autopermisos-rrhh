@@ -41,6 +41,28 @@ Se recomienda seguir [Conventional Commits](https://www.conventionalcommits.org/
 
 - Un PR por tema.
 - Descripción clara del problema y la solución.
+
+## Definición de Terminado
+
+Una tarea se considera terminada cuando:
+
+- [ ] Cumple los criterios de aceptación.
+- [ ] El código compila, cuando corresponde.
+- [ ] Las pruebas aplicables son satisfactorias.
+- [ ] La documentación está actualizada.
+- [ ] No tiene errores críticos conocidos.
+- [ ] Un integrante diferente revisó el PR.
+- [ ] El PR fue aprobado e integrado a main.
+- [ ] El Issue relacionado fue cerrado.
+
+## Reglas de documentación
+
+- Toda modificación debe realizarse en una rama.
+- Los cambios deben asociarse a un Issue.
+- Ningún documento se modifica directamente en main.
+- Cada Pull Request requiere revisión.
+- La integración se realiza con Squash and merge.
+
 - Referenciar issues relacionados cuando existan.
 - Asegurar que el pipeline de CI esté en verde.
 
