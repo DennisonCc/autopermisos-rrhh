@@ -1,24 +1,18 @@
-## Descripción
+## Qué cambia
 
-Describe de forma clara el cambio realizado y su motivación.
+Describa brevemente los cambios realizados.
 
-## Tipo de cambio
-
-- [ ] Nueva funcionalidad (`feat`)
-- [ ] Corrección de error (`fix`)
-- [ ] Documentación (`docs`)
-- [ ] Refactorización (`refactor`)
-- [ ] Pruebas (`test`)
-- [ ] Mantenimiento (`chore`)
-
-## Issue relacionado
+## Por qué
 
 Closes #
 
-## Checklist
+## Cómo revisarlo
 
-- [ ] El código compila sin errores.
-- [ ] Las pruebas pasan (`mvn verify`).
-- [ ] Se agregaron o actualizaron pruebas cuando fue necesario.
-- [ ] La documentación se actualizó si aplica.
-- [ ] No se incluyen credenciales ni secretos.
+Indique los archivos principales para revisar.
+
+## Lista de verificación
+
+- [ ] Sigue la convención de ramas.
+- [ ] Sigue la convención de commits.
+- [ ] La documentación fue actualizada.
+- [ ] Las pruebas funcionan correctamente.
