@@ -26,34 +26,46 @@ El equipo utilizará Scrum con iteraciones de dos semanas debido a que el proyec
 | Sprint Review | Fin Sprint | 20 min | Equipo | Pull Requests |
 | Retrospectiva | Fin Sprint | 20 min | Equipo | Acta |
 
-# PARTE B. ROLES Y RESPONSABILIDADES
+![Flujo del sprint](diagramas/FlujoSprint.png)
 
-## Roles
 
-| Rol | Integrante | Responsabilidades |
-|------|------|------|
-| Líder | Dennison Chalacan | Planificar y coordinar |
-| Analista | Jeffrey Manobanda | Gestionar requisitos |
-| Calidad y DevOps | Fernando Tipan | Revisar calidad y despliegues |
-| Product Owner | Docente | Validar entregables |
+## Parte B. Roles y responsabilidades
 
-## Matriz RACI
+### Roles del equipo
 
-| Actividad | Docente | Líder | Analista | Calidad |
-|------------|------------|------------|------------|------------|
-| Priorizar backlog | A | R | C | I |
-| Crear historias | C | I | R | C |
-| Programar funcionalidades | I | C | R | R |
-| Revisar PR | I | C | C | R |
-| Fusionar PR | I | I | C | R |
-| Gestionar tablero | I | R | C | C |
-| Realizar retrospectiva | I | R | C | C |
-| Aceptar incremento | A | C | I | I |
+| Rol | Integrante | Responsabilidad |
+|---|---|---|
+| Líder | Dennison Chalacan | Planificación y coordinación |
+| Analista | Jeffrey Manobanda | Requisitos y backlog |
+| Calidad y DevOps | Fernando Tipan | Revisión e integración |
+| Product Owner | Docente | Priorizar y aceptar entregas |
 
-## Rotación
+### Matriz RACI
+
+| Actividad | Docente | Líder | Analista | Calidad | Dev. |
+|---|---|---|---|---|---|
+| Priorizar backlog | A | C | R | I | I |
+| Crear historias | C | I | A/R | C | C |
+| Planificar sprint | C | A/R | R | C | I |
+| Configurar tablero | I | A/R | C | C | I |
+| Desarrollar | I | I | C | C | A/R |
+| Revisar PR | I | C | C | A | R |
+| Fusionar PR | I | I | I | A/R | C |
+| Actualizar Project | I | A/R | C | C | R |
+| Retrospectiva | I | A/R | C | C | C |
+| Aceptar incremento | A/R | C | I | C | I |
+
+R: ejecuta.
+A: aprueba o rinde cuentas.
+C: es consultado.
+I: es informado.
+
+Todos los integrantes participan como desarrolladores.
+
+### Plan de rotación
 
 | Sprint | Líder | Analista | Calidad |
-|----------|----------|----------|----------|
+|---|---|---|---|
 | 1 | Dennison | Jeffrey | Fernando |
 | 2 | Jeffrey | Fernando | Dennison |
 | 3 | Fernando | Dennison | Jeffrey |
@@ -63,56 +75,3 @@ El equipo utilizará Scrum con iteraciones de dos semanas debido a que el proyec
 | 7 | Dennison | Jeffrey | Fernando |
 | 8 | Jeffrey | Fernando | Dennison |
 
-# PARTE C. ARTEFACTOS
-
-## Catálogo de Artefactos
-
-| Artefacto | Propósito | Ubicación |
-|------------|------------|------------|
-| Product Backlog | Historias priorizadas | GitHub Issues |
-| Sprint Backlog | Gestión Sprint | GitHub Project |
-| Requisitos | RF y RNF | docs/02-requisitos |
-| Casos de Uso | Especificaciones funcionales | docs/03-modelado |
-| PROCESO.md | Metodología | docs/proceso |
-| Riesgos | Gestión de riesgos | docs/01-inicio |
-| Retrospectivas | Mejora continua | docs/proceso/retros |
-| Incremento | Software funcional | main |
-
-## Definición de Terminado
-
-1. Código compilado.
-2. Criterios de aceptación cumplidos.
-3. Pull Request revisado.
-4. Documentación actualizada.
-5. Sin errores críticos.
-6. PR aprobado.
-7. Issue cerrado.
-
-# PARTE E. FLUJO DE RAMAS
-
-## Comparación
-
-| Criterio | Git Flow | GitHub Flow | Trunk Based |
-|------------|------------|------------|------------|
-| Complejidad | Alta | Baja | Media |
-| Equipo pequeño | Regular | Excelente | Buena |
-| Frecuencia entrega | Media | Alta | Muy Alta |
-| Conflictos | Medio | Bajo | Medio |
-
-## Estrategia Seleccionada
-
-GitHub Flow fue seleccionado debido al tamaño del equipo y la necesidad de realizar integraciones frecuentes.
-
-## Convenciones
-
-| Elemento | Convención |
-|------------|------------|
-| Rama | feature/número-descripción |
-| Commit | feat:, fix:, docs: |
-| PR | tipo: descripción |
-| Merge | Squash and Merge |
-| Versión | SemVer |
-
-## Flujo
-
-Issue → Rama → Commit → Pull Request → Revisión → Merge → Release

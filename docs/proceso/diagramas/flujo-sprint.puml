@@ -1,0 +1,63 @@
+@startuml
+title Proceso del Sprint - Sistema Autopermisos RRHH
+
+start
+
+partition "Product Owner / Docente" {
+  :Priorizar Product Backlog;
+}
+
+partition "Líder del equipo" {
+  :Realizar Sprint Planning;
+  :Definir objetivo del Sprint;
+  :Seleccionar historias e Issues;
+}
+
+partition "Equipo de desarrollo" {
+  :Tomar Issue asignado;
+  :Crear rama desde main;
+  :Desarrollar funcionalidad o documentación;
+  :Realizar commits;
+  :Abrir Pull Request;
+}
+
+partition "Calidad y DevOps" {
+  :Revisar Pull Request;
+  if (¿Cumple criterios de aceptación?) then (Sí)
+    :Aprobar Pull Request;
+  else (No)
+    :Solicitar cambios;
+    partition "Desarrollador" {
+      :Corregir observaciones;
+      :Subir nuevos commits;
+    }
+    :Revisar nuevamente;
+  endif
+  :Integrar mediante Squash and Merge;
+  :Actualizar Issue y tablero;
+}
+
+partition "Equipo y Product Owner" {
+  :Realizar Sprint Review;
+  :Demostrar incremento;
+  :Registrar aceptación u observaciones;
+}
+
+partition "Equipo" {
+  :Realizar Retrospectiva;
+  :Registrar acciones de mejora;
+}
+
+if (¿Existe solicitud de cambio?) then (Sí)
+  partition "Analista y Product Owner" {
+    :Crear Issue de cambio;
+    :Evaluar impacto y prioridad;
+    :Actualizar Product Backlog;
+  }
+else (No)
+  :Mantener backlog vigente;
+endif
+
+:Preparar siguiente Sprint;
+stop
+@enduml
