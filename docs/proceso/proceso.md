@@ -75,3 +75,21 @@ Todos los integrantes participan como desarrolladores.
 | 7 | Dennison | Jeffrey | Fernando |
 | 8 | Jeffrey | Fernando | Dennison |
 
+
+## Parte C. Artefactos del proceso
+
+| Artefacto | Ubicación | Responsable |
+|---|---|---|
+| Product Backlog | GitHub Issues y Project | Analista |
+| Sprint Backlog | GitHub Project | Equipo |
+| Incremento | Rama main | Equipo |
+| Requisitos | docs/02-requisitos/ | Analista |
+| Casos de uso | docs/03-modelado/ | Analista |
+| Proceso del equipo | docs/proceso/PROCESO.md | Líder |
+| Riesgos | docs/01-inicio/ | Líder |
+| Retrospectivas | docs/proceso/retros/ | Líder |
+| Definición de terminado | CONTRIBUTING.md | Calidad |
+
+### Control de documentos
+Los documentos se actualizan mediante Pull Requests
+revisados y aprobados por otro integrante.
