@@ -6,6 +6,7 @@ En esta fase se define el alcance, los objetivos, el cronograma y los recursos d
 
 - [Taller: arranque del proyecto](<Taller_Clase1_Arranque_del_Proyecto.pdf>)
 - [Taller 2: mejora continua y ciclo de vida](<TALLER No. 2 – MEJORA CONTINUA Y CICLO DE VIDA.pdf>)
+- [Lab2: proceso del equipo y planificación del Sprint 2](<Lab2_NRC30743_Grupo6_Sistema Autopermisos RRHH.pdf>)
 
 ## Contenido esperado
 
