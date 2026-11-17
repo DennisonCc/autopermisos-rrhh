@@ -9,7 +9,7 @@
 | Estado | Propuesta para validación con RRHH y el docente-cliente |
 | Autores | Dennison Chalacan, Jeffrey Manobanda, Fernando Tipan |
 | Repositorio | <https://github.com/DennisonCc/autopermisos-rrhh> |
-| Documentos base | [Requisitos](../02-requisitos/README.md), [Casos de uso](../02-requisitos/README.md), [Planificación](../01-planificacion/README.md) |
+| Documentos base | [Requisitos](../02-requisitos/README.md), [Casos de uso](<Casos de uso del proyecto.pdf>), [Planificación](../01-planificacion/README.md) |
 
 ---
 
@@ -1258,7 +1258,7 @@ Mientras estas decisiones no estén cerradas, el documento mantiene supuestos ex
 ## 26. Fuentes
 
 - [Informe de Elicitación y Requisitos - Sistema de Permisos Laborales](<../02-requisitos/Informe de Elicitación y Requisitos - Sistema de Permisos Laborales.pdf>)
-- [Casos de uso del proyecto](<../02-requisitos/Casos de uso del proyecto.pdf>)
+- [Casos de uso del proyecto](<Casos de uso del proyecto.pdf>)
 - [Anexos](../02-requisitos/Anexos.pdf)
 - [Tarea: requisitos y backlog](../02-requisitos/Tarea_Requisitos_y_Backlog.pdf)
 - [Taller: arranque del proyecto](../01-planificacion/Taller_Clase1_Arranque_del_Proyecto.pdf)
